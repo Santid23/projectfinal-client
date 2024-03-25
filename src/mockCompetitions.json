@@ -1,0 +1,42 @@
+[
+    {
+        "title": "ThunderBox",
+        "description": "Competición de CrossFit en Talavera.",
+        "status": "Se puede inscribir",
+        "province": "Toledo",
+        "city": "Talavera de la Reina",
+        "image": "https://lh3.googleusercontent.com/p/AF1QipOMiFgUecTQe5H5odMscOoanH6wkh85zwvaVz_O=s1360-w1360-h1020",
+        "days": "Viernes, sabado y domingo",
+        "dueDate": "2024-10-18T12:00:00Z"
+    },
+    {
+        "title": "CrossFit Tempus",
+        "description": "Competición de CrossFit en Toledo.",
+        "status": "No se puede inscribir",
+        "province": "Toledo",
+        "city": "Toledo",
+        "image": "https://lh3.googleusercontent.com/p/AF1QipNe7qhzOlauW5h9nx-CYFJbYb_k4cVTJXQqeOOY=s1360-w1360-h1020",
+        "days": "Sabado y domingo",
+        "dueDate": "2024-02-10T12:00:00Z"
+    },
+    {
+        "title": "CrossFit CGT",
+        "description": "Competición de CrossFit en Torrevieja.",
+        "status": "Se puede inscribir",
+        "province": "Alicante",
+        "city": "Torrevieja",
+        "image": "https://lh3.googleusercontent.com/p/AF1QipPZdTDVH_p8VjoYvQ_2P0bQpk5Eu_aDlS3U6AIX=s1360-w1360-h1020",
+        "days": "Viernes, sabado y domingo",
+        "dueDate": "2024-07-25T10:00:00Z"
+    },
+    {
+        "title": "KULTUR BOX",
+        "description": "Competición de CrossFit en Ciudad Real.",
+        "status": "Se puede inscribir",
+        "province": "Ciudad Real",
+        "city": "Ciudad Real",
+        "image": "https://allfreeweight.com/wp-content/uploads/2023/09/Captura-de-Pantalla-2023-09-06-a-las-10.57.21-2-853x1024.png",
+        "days": "Sabado y domingo",
+        "dueDate": "2024-09-02T01:00:00Z"
+    }
+]
