@@ -1,11 +1,12 @@
+import { Img } from "@chakra-ui/react"
 import logoApp from "../../LogoTryHard.svg"
 
 
 const LogoIcon = () => {
   return (
-    <image src={ logoApp } alt="LogoTryHard"
+    <img src={ logoApp } alt="LogoTryHard"
     >
-    </image>
+    </img>
   )
 }
 
