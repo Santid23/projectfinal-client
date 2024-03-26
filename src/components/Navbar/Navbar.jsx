@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <Flex
-      padding={"34px 80px"}
+      padding={"0px 50px"}
       justifyContent={"space-between"}
       alignItems={"center"}
     >
