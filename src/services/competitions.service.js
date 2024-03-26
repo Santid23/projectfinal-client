@@ -17,10 +17,7 @@ class CompetitionService extends AxiosConfig {
   }
 
   async creatCompetition(data) {
-    data.location = {
-      type: "Point",
-      coordinates: [12, -43],
-    }
+    
     const response = await this.axios.post("/create", data)
     return response.data
   }

@@ -8,31 +8,26 @@ import competitionsService from "../../services/competitions.service"
 const IMAGE =
   "https://farm66.staticflickr.com/65535/53515708112_387fef51e4_b.jpg"
 
-const OPTIONS = ["name", "neighborhood", "address", "cuisine_type", "image"]
+const OPTIONS = ["title", "province", "city", "image", "status", "dueDate", "description", "days"]
 
-const DAYS = ["Monday", "Tuesday"]
 function CreateCompetitionPage() {
   const [competitionData, setCompetitionData] = useState({
-    name: "",
-    cuisine_type: "",
+    title: "",
+    province: "",
+    city: "",
     image: "",
-    operating_hours: {},
+    status: "",
+    dueDate: "",
+    description: "",
+    days: ""
   })
 
   const title = "Crear"
   const subtitle = "Crea tu propia competición"
 
   const onChange = (e) => {
-    const { name, value } = e.target
-    let update = { [name]: value }
-    if (DAYS.includes(name)) {
-      update = {
-        operating_hours: {
-          ...competitionData.operating_hours,
-          [name]: value,
-        },
-      }
-    }
+    const { title, value } = e.target
+    let update = { [title]: value }
     setCompetitionData({ ...competitionData, ...update })
   }
 
@@ -42,12 +37,14 @@ function CreateCompetitionPage() {
       console.log("create", competitionData)
       await competitionsService.creatCompetition(competitionData)
       setCompetitionData({
-        name: "",
-        neighborhood: "",
-        address: "",
-        cuisine_type: "",
+        title: "",
+        province: "",
+        city: "",
         image: "",
-        operating_hours: {},
+        status: "",
+        dueDate: "",
+        description: "",
+        days: ""
       })
     } catch (err) {
       console.error(err)
@@ -67,21 +64,15 @@ function CreateCompetitionPage() {
         )}
         <form onSubmit={onSubmit} style={{ marginTop: "30px" }}>
           <Flex flexDir={"column"} gap={"30px"}>
-            {OPTIONS.concat(DAYS).map((option) => {
-              if (DAYS.includes(option)) {
-                console.log(competitionData.operating_hours[option])
-              }
+            {OPTIONS.map((option) => {
+             
               return (
                 <Input
-                  name={option}
+                  title={option}
                   onChange={onChange}
                   key={option}
                   placeholder={option}
-                  value={
-                    DAYS.includes(option)
-                      ? competitionData.operating_hours[option] || ""
-                      : competitionData[option]
-                  }
+                  value={competitionData[option]}
                 />
               )
             })}

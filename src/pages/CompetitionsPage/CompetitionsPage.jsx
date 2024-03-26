@@ -14,7 +14,6 @@ function CompetitionsPage() {
       <Flex flexDir={"column"} gap={"80px"}>
         <Title>Todas las competiciones</Title>
         <CompetitionsGrid competitions={competitions} />
-        console.log(competitions)
       </Flex>
     </PageWrapper>
   )
