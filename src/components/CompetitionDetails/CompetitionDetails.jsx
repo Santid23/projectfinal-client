@@ -16,10 +16,10 @@ const CompetitionDetails = ({ onOpen, competitionDetails }) => {
         borderRadius={"20px"}
         flexDir={"column"}
       >
-        {competitionDetails.map(({ title, content }) => {
+        {competitionDetails.map(({ name, content }) => {
           return (
-            <Box key={title}>
-              {title === "Operating hours" ? (
+            <Box key={name}>
+              {name === "Operating hours" ? (
                 Object.entries(content).map(([key, val]) => {
                   return (
                     <Text key={key}>
@@ -33,7 +33,7 @@ const CompetitionDetails = ({ onOpen, competitionDetails }) => {
               ) : (
                 <Text>
                   <Text as={"span"} fontWeight={"bold"}>
-                    {title}:{" "}
+                    {name}:{" "}
                   </Text>
                   {content}
                 </Text>

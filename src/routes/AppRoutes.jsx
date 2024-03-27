@@ -10,6 +10,7 @@ import ProfilePage from "../pages/ProfilePage/ProfilePage"
 import CompetitionDetailsPage from "../pages/CompetitionDetailsPage/CompetitionDetailsPage"
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage"
 import AuthMiddleware from "../middlewares/AuthMiddleware"
+import CompetitionDetPage from "../pages/CompetitionDetPage/CompetitionDetPage"
 
 const AppRoutes = () => {
   const router = createBrowserRouter([
@@ -44,7 +45,7 @@ const AppRoutes = () => {
         },
         {
           path: "/competitions/:id",
-          element: <CompetitionDetailsPage />,
+          element: <CompetitionDetPage />,
         },
         {
           path: "/competitions/create",

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import competitionsService from "../../services/competitions.service"
 import FormPageLayout from "../../components/FormPageLayout/FormPageLayout"
 import CompetitionDetails from "../../components/CompetitionDetails/CompetitionDetails"
-import { getCompetitionDet, getCompetitionDetails } from "../../utils"
+import { getCompetitionDet } from "../../utils" 
 import Modal from "../../components/Modal/Modal"
 import CustomForm from "../../components/CustomForm/CustomForm"
 import {
@@ -12,7 +12,7 @@ import {
   COMPETITION_OPTIONS,
 } from "../../consts"
 
-const CompetitionDetailsPage = () => {
+const CompetitionDetPage = () => {
   // const { isOpen, onOpen, onClose } = useDisclosure()
   const [showModal, setShowModal] = useState(false)
   const [competition, setCompetition] = useState(COMPETITION_MOCK)
@@ -29,20 +29,20 @@ const CompetitionDetailsPage = () => {
     days,
     dueDate
   } = competition
+  
   const COMPETITION_DETAILS = getCompetitionDet(
     title,
     description,
     status,
     province,
     city,
-    image,
     days,
     dueDate
   )
 
   const getSingleCompetition = async () => {
     try {
-      const singleCompetition = await competitionsService.getOneCompetition(id)
+      let singleCompetition = await competitionsService.getOneCompetition(id)
       setCompetition(singleCompetition)
     } catch (error) {
       console.log("Error ==>", error)
@@ -69,12 +69,11 @@ const CompetitionDetailsPage = () => {
     setCompetition(updatedCompetition)
     try {
     } catch (error) {
-      // MOSTRAR EL ERROR => MODAL!!! TE FALTA EL NOMBRE DE USUARIO: HACKER JIJIJI
       console.log("ERROR ==>", error)
     }
   }
 
-  return (
+ return (
     <FormPageLayout backgroundImage={image}>
       <CompetitionDetails
         onOpen={() => setShowModal(true)}
@@ -91,7 +90,7 @@ const CompetitionDetailsPage = () => {
         </Modal>
       )}
     </FormPageLayout>
-  )
+  ) 
 }
 
-export default CompetitionDetailsPage
+export default CompetitionDetPage

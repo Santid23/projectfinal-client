@@ -14,7 +14,7 @@ const NotFoundPage = () => {
         404
       </Text>
       <Text fontWeight={"bold"} fontSize={"52px"}>
-        Page not found!!!
+        Page not found
       </Text>
     </Flex>
   )

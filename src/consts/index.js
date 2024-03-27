@@ -8,13 +8,13 @@ export const COMPETITION_OPTIONS = [
 
 export const COMPETITION_MOCK = {
   title: "",
-  days: {},
-  province: "",
-  city: "",
-  address: "",
-  description: "",
-  image: "",
-  dueDate: [],
+    description: "",
+    status: "",
+    province: "",
+    city: "",
+    image: "",
+    days: "",
+    dueDate: ""
 }
 
 export const EDIT_COMPETITION_DATA = {

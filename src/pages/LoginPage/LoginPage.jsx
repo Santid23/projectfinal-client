@@ -29,7 +29,7 @@ const LoginPage = () => {
         subtitle={"Disfruta al máximo del Crossfit"}
         onChange={onChange}
         onSubmit={onSubmit}
-        options={["email", "contraseña"]}
+        options={["username", "contraseña"]}
       />
     </FormPageLayout>
   )
