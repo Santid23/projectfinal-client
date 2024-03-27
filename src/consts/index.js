@@ -1,9 +1,9 @@
 export const COMPETITION_OPTIONS = [
-  "title",
-  "status",
-  "province",
-  "city",
-  "image",
+  "Titulo",
+  "Estado",
+  "Provincia",
+  "Ciudad",
+  "Imagen",
 ]
 
 export const COMPETITION_MOCK = {
