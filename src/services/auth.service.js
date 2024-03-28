@@ -1,4 +1,4 @@
-import AxiosConfig from "./axios"
+import AxiosConfig from "../services/axios"
 
 class AuthService extends AxiosConfig {
   constructor() {

@@ -11,6 +11,11 @@ const SignupPage = () => {
     email: "",
     password: "",
   })
+
+  /* useEffect(() => {
+    console.log("El usuario data", userData)
+  }, [userData]) */
+
   const toast = useToast()
   const navigate = useNavigate()
 
@@ -29,7 +34,7 @@ const SignupPage = () => {
         title: "Cuenta creada!",
         description: "Hemos creado la cuenta perfectamente",
         status: "success",
-        duration: 5000,
+        duration: 4000,
         isClosable: true,
       })
       navigate("/login")

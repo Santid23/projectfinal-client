@@ -25,7 +25,7 @@ const ProfileBanner = ({
         <Avatar width={"290px"} height={"290px"} src={avatar} />
         <Flex flexDir={"column"} gap={"25px"}>
           <Text fontSize={"32px"} fontWeight={"bold"}>
-            Username: {username}
+            Usuario: {username}
           </Text>
           <Text fontSize={"32px"} fontWeight={"bold"}>
             Email: {email}

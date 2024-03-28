@@ -35,7 +35,7 @@ export const AuthProvider = ({ children }) => {
     // REMOVEMOS EL TOKEN
     // SETEAMOS EL USUARIO A NULL
     // REDIRECCIÓN AL LOGIN!!!
-    console.log("ENTRO AL LOGOUT!!!")
+    console.log("ENTRO AL LOGOUT!")
     localStorage.removeItem("token")
     setUser(null)
     navigate("/login")
@@ -55,7 +55,7 @@ export const AuthProvider = ({ children }) => {
       await getUser()
       navigate("/profile")
     } catch (error) {
-      console.log("EL ERROR", error)
+      console.log("ERROR", error)
     }
   }
 

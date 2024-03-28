@@ -49,13 +49,13 @@ const Navbar = () => {
       <Flex gap={"20px"}>
         {user ? (
           <>
-            <AuthLink to={"/profile"}>Profile</AuthLink>
-            <AuthLink onClick={logout}>Logout</AuthLink>
+            <AuthLink to={"/profile"}>Perfil</AuthLink>
+            <AuthLink onClick={logout}>Cerrar sesión</AuthLink>
           </>
         ) : (
           <>
             <AuthLink to={"/login"}>Login</AuthLink>
-            <AuthLink to={"/signup"}>Signup</AuthLink>
+            <AuthLink to={"/signup"}>Registrarse</AuthLink>
           </>
         )}
       </Flex>

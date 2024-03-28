@@ -16,7 +16,7 @@ const ProfilePage = () => {
   return (
     <PageWrapper>
       <Flex flexDir={"column"} gap={"44px"}>
-        <Title>Welcome {username}!</Title>
+        <Title>Hola {username}!</Title>
         <ProfileBanner
           username={username}
           email={email}
@@ -24,8 +24,10 @@ const ProfilePage = () => {
           handleUserDeletion={handleUserDeletion}
           handleUserEdit={handleUserEdit}
         />
-        {favoriteCompetitions.length !== 0 && (
+        {favoriteCompetitions.length !== 0 ? (
           <FavoriteCompetitions favoriteCompetitions={favoriteCompetitions} />
+        ) : (
+          <Text>No tienes competiciones a la vista</Text>
         )}
       </Flex>
     </PageWrapper>
