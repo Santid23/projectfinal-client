@@ -5,7 +5,7 @@ const Title = ({ fontSize = "56px", children, ...props }) => {
   return (
     <Text
       textAlign={"center"}
-      fontSize={["24px", fontSize]}
+      fontSize={["24px", "46px"]}
       fontWeight={"bold"}
       {...props}
     >

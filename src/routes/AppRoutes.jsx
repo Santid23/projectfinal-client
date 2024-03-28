@@ -7,7 +7,6 @@ import CreateCompetitionPage from "../pages/CreateCompetitionPage/CreateCompetit
 import LoginPage from "../pages/LoginPage/LoginPage"
 import SignupPage from "../pages/SignupPage/SignupPage"
 import ProfilePage from "../pages/ProfilePage/ProfilePage"
-import CompetitionDetailsPage from "../pages/CompetitionDetailsPage/CompetitionDetailsPage"
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage"
 import AuthMiddleware from "../middlewares/AuthMiddleware"
 import CompetitionDetPage from "../pages/CompetitionDetPage/CompetitionDetPage"

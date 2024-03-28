@@ -65,6 +65,7 @@ const CompetitionDetPage = () => {
       id,
       editCompetitionData
     )
+    console.log("EL RESTAURANTE ACTUALIZADO ==>", updatedCompetition )
     setShowModal(false)
     setCompetition(updatedCompetition)
     try {
