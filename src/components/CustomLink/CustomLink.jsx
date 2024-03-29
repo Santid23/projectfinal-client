@@ -3,8 +3,12 @@ import { Link as ReactRouterLink } from "react-router-dom"
 
 import React from "react"
 
-const CustomLink = (props) => {
-  return <Link {...props} as={ReactRouterLink}></Link>
+// { children, ...props}  => entre Link => {children}
+
+const CustomLink = ({ children, ...props}) => {
+  return <Link {...props} as={ReactRouterLink}> 
+  {children}
+  </Link>
 }
 
 export default CustomLink
