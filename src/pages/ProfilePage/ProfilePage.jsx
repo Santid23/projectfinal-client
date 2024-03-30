@@ -20,7 +20,7 @@ const ProfilePage = () => {
         <ProfileBanner
           username={username}
           email={email}
-          avatar={avatar}
+          // avatar={avatar}
           handleUserDeletion={handleUserDeletion}
           handleUserEdit={handleUserEdit}
         />
