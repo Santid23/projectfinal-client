@@ -10,8 +10,6 @@ const SignupPage = () => {
     username: "",
     email: "",
     password: "",
-    role: "",
-    avatar: ""
   })
 
   /* useEffect(() => {
@@ -53,7 +51,7 @@ const SignupPage = () => {
         subtitle={"Apúntate o crea competiciones"}
         onChange={onChange}
         onSubmit={onSubmit}
-        options={["usuario", "email", "contraseña", "role (Admin o User)", "avatar"]}
+        options={["usuario", "email", "contraseña"]}
       />
     </FormPageLayout>
   )
