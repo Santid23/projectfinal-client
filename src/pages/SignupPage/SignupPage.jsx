@@ -51,7 +51,7 @@ const SignupPage = () => {
         subtitle={"Apúntate o crea competiciones"}
         onChange={onChange}
         onSubmit={onSubmit}
-        options={["usuario", "email", "contraseña"]}
+        options={["username", "email", "password"]}
       />
     </FormPageLayout>
   )
