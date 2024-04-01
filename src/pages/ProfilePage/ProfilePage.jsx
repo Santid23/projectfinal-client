@@ -18,9 +18,9 @@ const ProfilePage = () => {
       <Flex flexDir={"column"} gap={"44px"}>
         <Title>Hola {email}!</Title>
         <ProfileBanner
-          //username={username}
+         // username={username}
           email={email}
-          // avatar={avatar}
+          avatar={avatar}
           handleUserDeletion={handleUserDeletion}
           handleUserEdit={handleUserEdit}
         />

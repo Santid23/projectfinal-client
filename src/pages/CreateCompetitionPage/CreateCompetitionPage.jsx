@@ -4,6 +4,7 @@ import { Flex, Text } from "@chakra-ui/layout"
 import Input from "../../components/Input/Input"
 import SubmitButton from "../../components/SubmitButton/SubmitButton"
 import competitionsService from "../../services/competitions.service"
+import { Toast } from "@chakra-ui/react"
 
 const IMAGE =
   "https://farm66.staticflickr.com/65535/53515708112_387fef51e4_b.jpg"
@@ -45,6 +46,13 @@ function CreateCompetitionPage() {
         dueDate: "",
         description: "",
         days: ""
+      })
+      Toast({
+        title: "Competición creada!",
+        description: "Hemos creado la competición perfectamente",
+        status: "success",
+        duration: 4000,
+        isClosable: true,
       })
     } catch (err) {
       console.error(err)
