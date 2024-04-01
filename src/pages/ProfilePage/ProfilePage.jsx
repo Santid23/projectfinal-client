@@ -16,19 +16,15 @@ const ProfilePage = () => {
   return (
     <PageWrapper>
       <Flex flexDir={"column"} gap={"44px"}>
-        <Title>Hola {username}!</Title>
+        <Title>Hola {email}!</Title>
         <ProfileBanner
-          username={username}
+          //username={username}
           email={email}
           // avatar={avatar}
           handleUserDeletion={handleUserDeletion}
           handleUserEdit={handleUserEdit}
         />
-        {favoriteCompetitions.length !== 0 ? (
-          <FavoriteCompetitions favoriteCompetitions={favoriteCompetitions} />
-        ) : (
-          <Text>No tienes competiciones a la vista</Text>
-        )}
+        
       </Flex>
     </PageWrapper>
   )
