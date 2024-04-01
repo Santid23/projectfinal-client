@@ -1,7 +1,6 @@
-# LET HIM COOK: built using MERN STACK (Mongo, Express, React.JS, Node)
+# TryHard :muscle: : built using MERN STACK (Mongo, Express, React.JS, Node)
 
-Let Him Cook is a MERN app that displays some of the coolest restaurants around the world and allows
-experienced users to create more restaurants and display them on the web.
+TryHard seeks to be one of the main apps in the fitness sector where any user (amateur or professional) can have fun.
 
 # Deployed Application
 
@@ -15,20 +14,15 @@ npm install
 
 # Environment Variables
 
-You will need to create a .env (or .env.local) file if you want to run this project locally. In order to do so you will also need variable:
-
-- REACT_APP_GOOGLE_MAPS_API_KEY
-- REACT_APP_API_URL
-
 # Application Routes:
 
-|              URL path               |        Description        | Protected |
-| :---------------------------------: | :-----------------------: | :-------: |
-|                  /                  |         Home page         |    ❌     |
-|               /login                |        Login page         |    ❌     |
-|               /signup               |        Signup page        |    ❌     |
-|              /profile               |       Profile Page        |    ❌     |
-|            /restaurants             |     Restaurants Page      |    ✅     |
-|          /restaurants/:id           |  Restaurant Details Page  |    ✅     |
-|         /restaurants/create         | Restaurants Creation Page |    ✅     |
-| /restaurants/reviews/:restaurant_id |     Restaurants Page      |    ✅     |
+|              URL path                 |        Description         | Protected |
+| :-----------------------------------: | :------------------------: | :-------: |
+|                  /                    |         Home page          |    ❌     |
+|               /login                  |        Login page          |    ❌     |
+|               /signup                 |        Signup page         |    ❌     |
+|              /profile                 |       Profile Page         |    ❌     |
+|            /competitions              |     Competitions Page      |    ✅     |
+|          /competitions/:id            |  Competition Details Page  |    ✅     |
+|         /competitions/create          | Competitions Creation Page |    ✅     |
+| /competitions/reviews/:competition_id |     Competitions Page      |    ✅     |
