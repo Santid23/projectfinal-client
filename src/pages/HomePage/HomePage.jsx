@@ -4,6 +4,7 @@ import { Flex } from '@chakra-ui/layout';
 import FeaturedCompetitions from '../../components/FeaturedCompetitions/FeaturedCompetitions';
 
 function HomePage() {
+ 
   return (
     <PageWrapper>
       <Flex>
