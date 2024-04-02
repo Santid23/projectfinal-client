@@ -24,6 +24,8 @@ const FeaturedCompetitions = () => {
     getSixCompetitions();
   }, []);
 
+  
+
   return (
     <Flex width={'100%'} gap={'80px'} flexDir={'column'}>
       <Title>Competiciones Destacadas</Title>

@@ -12,7 +12,7 @@ const CompetitionsGrid = ({ competitions }) => {
     <Grid
       templateColumns={[
         "repeat(1, 1fr)",
-        "repeat(1, 1fr)",
+        "repeat(2, 1fr)",
         "repeat(2, 1fr)",
         "repeat(3, 1fr)",
       ]}
@@ -25,7 +25,7 @@ const CompetitionsGrid = ({ competitions }) => {
               key={_id}
               title={title}
               image={image}
-              handleLike={handleLike}
+              // handleLike={handleLike}
             />
           </CustomLink>
         )
