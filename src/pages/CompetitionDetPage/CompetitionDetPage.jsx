@@ -12,6 +12,7 @@ import {
   COMPETITION_OPTIONS,
 } from "../../consts"
 
+
 const CompetitionDetPage = () => {
   // const { isOpen, onOpen, onClose } = useDisclosure()
   const [showModal, setShowModal] = useState(false)
@@ -90,6 +91,7 @@ const CompetitionDetPage = () => {
           />
         </Modal>
       )}
+      
     </FormPageLayout>
   ) 
 }

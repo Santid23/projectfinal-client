@@ -5,6 +5,7 @@ import ProfileBanner from "../../components/ProfileBanner/ProfileBanner"
 import FavoriteCompetitions from "../../components/FavoriteCompetitions/FavoriteCompetitions"
 import { useContext } from "react"
 import { AuthContext } from "../../contexts/AuthContext"
+import CustomLink from "../../components/CustomLink/CustomLink"
 
 const ProfilePage = () => {
   const { user } = useContext(AuthContext)
@@ -12,8 +13,9 @@ const ProfilePage = () => {
 
   const AVATAR_IMAGE =
 "https://www.mundodeportivo.com/alfabeta/hero/2022/11/Goku-dragon-ball-principal-heroe-2.jpg?width=1200&aspect_ratio=16:9"
-  const handleUserEdit = () => {}
-  const handleUserDeletion = () => {}
+  // const handleUserEdit = () => {}
+
+  // const handleUserDeletion = () => {}
 
   return (
     <PageWrapper>
@@ -25,10 +27,13 @@ const ProfilePage = () => {
          username={username}
           email={email}
           avatar={AVATAR_IMAGE}
-          handleUserDeletion={handleUserDeletion}
-          handleUserEdit={handleUserEdit}
+          // handleUserDeletion={handleUserDeletion}
+          // handleUserEdit={handleUserEdit}
         />
-        
+        <Flex flexDir={"column"} gap={"44px"} fontSize={"30px"}>
+        <CustomLink to="/competitions"> 🚀 ¿Quieres ver qué competiciones son para ti?</CustomLink>
+        <CustomLink to="/competitions/create"> 🏋️ Crea la competición que tanto estás deseando</CustomLink>
+        </Flex>
       </Flex>
     </PageWrapper>
   )

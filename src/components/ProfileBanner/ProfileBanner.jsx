@@ -1,13 +1,14 @@
 import { Avatar, Box, Flex, Link, Text } from "@chakra-ui/react"
 import EditPenIcon from "../EditPenIcon/EditPenIcon"
 import DeleteIcon from "../DeleteIcon/DeleteIcon"
+import CustomForm from "../CustomForm/CustomForm"
+import CustomLink from "../CustomLink/CustomLink"
 
 const ProfileBanner = ({
   avatar,
   username,
   email,
   handleUserEdit,
-  handleUserDeletion,
 }) => {
   return (
     <Flex justifyContent={"center"}>
@@ -33,20 +34,15 @@ const ProfileBanner = ({
           <Text fontSize={"25px"} >
             Email: {email}
           </Text>
-          <Text marginBottom="10px" fontSize="18px">
-          <Link to="/competitions">- ¿Quieres ver qué competiciones son para ti?</Link>
-        </Text>
+          
         </Flex>
         <Flex gap={"18px"} position={"absolute"} top={"24px"} right={"24px"}>
-          <Box cursor={"pointer"} onClick={handleUserEdit}>
-            <EditPenIcon />
-          </Box>
-          <Box cursor={"pointer"} onClick={handleUserDeletion}>
-            <DeleteIcon />
-          </Box>
+          
         </Flex>
       </Flex>
     </Flex>
+    
+    
   )
 }
 
