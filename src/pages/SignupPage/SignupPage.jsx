@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom"
 
 const SignupPage = () => {
   const [userData, setUserData] = useState({
-    username: "",
+   username: "",
     email: "",
     password: "",
   })
@@ -51,7 +51,7 @@ const SignupPage = () => {
         subtitle={"Apúntate o crea competiciones"}
         onChange={onChange}
         onSubmit={onSubmit}
-        options={["username", "email", "password"]}
+        options={[ "email", "password", "username"]}
       />
     </FormPageLayout>
   )

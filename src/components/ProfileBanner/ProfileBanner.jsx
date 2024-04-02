@@ -1,4 +1,4 @@
-import { Avatar, Box, Flex, Text } from "@chakra-ui/react"
+import { Avatar, Box, Flex, Link, Text } from "@chakra-ui/react"
 import EditPenIcon from "../EditPenIcon/EditPenIcon"
 import DeleteIcon from "../DeleteIcon/DeleteIcon"
 
@@ -25,11 +25,17 @@ const ProfileBanner = ({
         <Avatar width={"290px"} height={"290px"} src={avatar} />
         <Flex flexDir={"column"} gap={"25px"}>
           <Text fontSize={"32px"} fontWeight={"bold"}>
-            Usuario: {username}
+            Mi cuenta
           </Text>
-          <Text fontSize={"32px"} fontWeight={"bold"}>
+          <Text fontSize={"25px"} >
+            Nombre de usuario: {username}
+          </Text>
+          <Text fontSize={"25px"} >
             Email: {email}
           </Text>
+          <Text marginBottom="10px" fontSize="18px">
+          <Link to="/competitions">- ¿Quieres ver qué competiciones son para ti?</Link>
+        </Text>
         </Flex>
         <Flex gap={"18px"} position={"absolute"} top={"24px"} right={"24px"}>
           <Box cursor={"pointer"} onClick={handleUserEdit}>

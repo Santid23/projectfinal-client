@@ -6,6 +6,7 @@ import NavigationLink from "../NavigationLink/NavigationLink"
 import { useContext } from "react"
 import { AuthContext } from "../../contexts/AuthContext"
 import LogoIcon from "../LogoIcon/LogoIcon"
+import { Avatar } from "@chakra-ui/react"
 
 
 const Navbar = () => {
@@ -51,6 +52,12 @@ const Navbar = () => {
           <>
             <AuthLink to={"/profile"}>Perfil</AuthLink>
             <AuthLink onClick={logout}>Cerrar sesión</AuthLink>
+            <Avatar
+                  size={'md'}
+                  src={
+                    'https://www.mundodeportivo.com/alfabeta/hero/2022/11/Goku-dragon-ball-principal-heroe-2.jpg?width=1200&aspect_ratio=16:9'
+                  }
+                />
           </>
         ) : (
           <>

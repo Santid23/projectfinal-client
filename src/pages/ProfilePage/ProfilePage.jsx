@@ -10,17 +10,21 @@ const ProfilePage = () => {
   const { user } = useContext(AuthContext)
   const { username, email, avatar, favoriteCompetitions } = user
 
+  const AVATAR_IMAGE =
+"https://www.mundodeportivo.com/alfabeta/hero/2022/11/Goku-dragon-ball-principal-heroe-2.jpg?width=1200&aspect_ratio=16:9"
   const handleUserEdit = () => {}
   const handleUserDeletion = () => {}
 
   return (
     <PageWrapper>
       <Flex flexDir={"column"} gap={"44px"}>
-        <Title>Hola {email}!</Title>
+        <Title>Hola {username}!
+        <br /> 
+        Es hora de empezar a pasarselo bien 💪🦍 </Title>
         <ProfileBanner
-         // username={username}
+         username={username}
           email={email}
-          avatar={avatar}
+          avatar={AVATAR_IMAGE}
           handleUserDeletion={handleUserDeletion}
           handleUserEdit={handleUserEdit}
         />

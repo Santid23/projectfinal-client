@@ -23,8 +23,8 @@ function CreateCompetitionPage() {
     days: ""
   })
 
-  const title = "Crear"
-  const subtitle = "Crea tu propia competición"
+  const title = "Haz una nueva competición"
+  const subtitle = "Crea la tuya"
 
   const onChange = (e) => {
     const { title, value } = e.target
@@ -62,7 +62,7 @@ function CreateCompetitionPage() {
   return (
     <FormPageLayout backgroundImage={IMAGE}>
       <Flex minW={"400px"} maxW={"400px"} flexDir={"column"}>
-        <Text textAlign={"center"} fontSize={"32px"} fontWeight={"bold"}>
+        <Text textAlign={"center"} fontSize={"30px"} fontWeight={"bold"}>
           {title}
         </Text>
         {subtitle && (

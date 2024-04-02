@@ -30,3 +30,8 @@ export const EDIT_COMPETITION_DATA = {
   days: "",
   dueDate: "",
 }
+
+export const EDIT_USER_DATA = {
+  username: "",
+  email: ""
+}
