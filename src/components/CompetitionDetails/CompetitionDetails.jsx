@@ -1,7 +1,7 @@
 import { Box, Flex, Text } from "@chakra-ui/react"
 import React from "react"
 import PenEditIcon from "../PenEditIcon/PenEditIcon"
-// import EditPenIcon from "../EditPenIcon/EditPenIcon"
+import ButtonDelete from "../ButtonDelete/ButtonDelete"
 
 const CompetitionDetails = ({ onOpen, competitionDetails }) => {
   return (
@@ -19,18 +19,7 @@ const CompetitionDetails = ({ onOpen, competitionDetails }) => {
         {competitionDetails.map(({ name, content }) => {
           return (
             <Box key={name}>
-              {name === "Operating hours" ? (
-                Object.entries(content).map(([key, val]) => {
-                  return (
-                    <Text key={key}>
-                      <Text as={"span"} fontWeight={"bold"}>
-                        {key}:{" "}
-                      </Text>
-                      {val}
-                    </Text>
-                  )
-                })
-              ) : (
+              { (
                 <Text>
                   <Text as={"span"} fontWeight={"bold"}>
                     {name}:{" "}
@@ -42,6 +31,7 @@ const CompetitionDetails = ({ onOpen, competitionDetails }) => {
           )
         })}
         <PenEditIcon onClick={onOpen} />
+        <ButtonDelete  />
       </Flex>
     </Flex>
   )
