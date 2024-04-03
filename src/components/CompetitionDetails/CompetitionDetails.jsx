@@ -19,7 +19,7 @@ const CompetitionDetails = ({ onOpen, competitionDetails }) => {
         {competitionDetails.map(({ name, content }) => {
           return (
             <Box key={name}>
-              { (
+              {(
                 <Text>
                   <Text as={"span"} fontWeight={"bold"}>
                     {name}:{" "}
@@ -31,7 +31,7 @@ const CompetitionDetails = ({ onOpen, competitionDetails }) => {
           )
         })}
         <PenEditIcon onClick={onOpen} />
-        <ButtonDelete  />
+      
       </Flex>
     </Flex>
   )

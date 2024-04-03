@@ -30,7 +30,7 @@ const ProfilePage = () => {
           // handleUserDeletion={handleUserDeletion}
           // handleUserEdit={handleUserEdit}
         />
-        <Flex flexDir={"column"} gap={"44px"} fontSize={"30px"}>
+        <Flex flexDir={"column"} gap={"44px"} fontSize={"30px"} textAlign={"center"}>
         <CustomLink to="/competitions"> 🚀 ¿Quieres ver qué competiciones son para ti?</CustomLink>
         <CustomLink to="/competitions/create"> 🏋️ Crea la competición que tanto estás deseando</CustomLink>
         </Flex>
